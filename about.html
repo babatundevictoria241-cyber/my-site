@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) {
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Babatunde Victoria Inioluwa</title>
+<meta name="description" content="I'm Victoria, a media growth specialist helping YouTube creators, Twitch streamers, and musicians grow, monetize, and get heard. From channel strategy and SEO to video editing, songwriting, and press promotion, I turn content into a real business.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="brand">Babatunde <span>Victoria</span> Inioluwa</a>
+  <div class="nav-right">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <div class="nav-dropdown-wrap">
+        <button type="button" class="nav-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Services
+          <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" data-dropdown-panel>
+        <a href="services.html#svc-channel-management" class="nav-dropdown-link">YouTube Channel Management</a>
+        <a href="services.html#svc-video-editing" class="nav-dropdown-link">YouTube Video Editing</a>
+        <a href="services.html#svc-seo-growth" class="nav-dropdown-link">YouTube SEO &amp; Growth</a>
+        <a href="services.html#svc-monetization" class="nav-dropdown-link">YouTube Monetization</a>
+        <a href="services.html#svc-youtube-promotion" class="nav-dropdown-link">YouTube Promotion</a>
+        <a href="services.html#svc-twitch-promotion" class="nav-dropdown-link">Twitch Promotion</a>
+        <a href="services.html#svc-music-promotion" class="nav-dropdown-link">Music Promotion</a>
+        <a href="services.html#svc-songwriting" class="nav-dropdown-link">Songwriting</a>
+        <a href="services.html#svc-press-release" class="nav-dropdown-link">Press Release</a>
+          <a href="services.html" class="nav-dropdown-link nav-dropdown-all">See all services &rarr;</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-dropdown-wrap header-connect-wrap">
+        <button type="button" class="nav-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Connect
+          <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" data-dropdown-panel>
+          <a href="https://www.linkedin.com/in/babatunde-victoria-a283833b3/" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5v10"/><circle cx="6.5" cy="5.2" r="1.1" fill="currentColor" stroke="none"/><path d="M11 18.5v-6.2a2.3 2.3 0 0 1 4.6 0v6.2"/><path d="M11 18.5v-6.2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.fiverr.com/users/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            Fiverr
+          </a>
+          <button type="button" class="nav-dropdown-link footer-social-dropdown-link" data-discord-copy="victoria048713">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8.2c3.2-1.1 6.8-1.1 10 0"/><path d="M6.2 9.3c-1.4 3-1.6 5.9-.9 8.3 1.5.8 2.9 1.3 4.2 1.5l.8-1.5"/><path d="M17.8 9.3c1.4 3 1.6 5.9.9 8.3-1.5.8-2.9 1.3-4.2 1.5l-.8-1.5"/><circle cx="9" cy="13.2" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.2" r=".9" fill="currentColor" stroke="none"/></svg>
+            <span data-discord-label>victoria048713</span>
+          </button>
+          <a href="mailto:babatundevictoria300@gmail.com" class="nav-dropdown-link footer-social-dropdown-link">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            Gmail
+          </a>
+        </div>
+      </div>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta glow-border">Book a Free Strategy Call</a>
+  </div>
+  <button type="button" class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+</header>
+
+<main class="container page-head">
+  <div class="hero-grid about-grid">
+    <div>
+      <div class="eyebrow">ABOUT ME</div>
+      <h1 class="page-title">Built by a creator, for creators.</h1>
+      <p class="about-lede">Hi, I'm Victoria, a media growth specialist helping creators and artists turn their content into a real, sustainable business.</p>
+      <p class="about-lede">I work at the intersection of platform strategy and creative craft. On the YouTube side, I handle everything from channel management, SEO-driven growth, and monetization strategy to hands-on video editing that keeps viewers watching. On Twitch, I help creators build the kind of consistent, engaged audience that turns casual viewers into loyal communities.</p>
+      <p class="about-lede">For artists, I go beyond the numbers, writing songs, running press campaigns, and promoting music to the right audiences so the work actually gets heard.</p>
+      <p class="about-lede">Every creator's path looks different, which is why I don't believe in one-size-fits-all growth. Whether you're just starting out or trying to break through a plateau, I build a strategy around where you are and where you want to go. Then I execute it, from the content itself to the systems behind it.</p>
+      <p class="about-lede">If you're ready to stop guessing and start growing, let's talk.</p>
+      <div class="reveal-up about-signature">
+        <div class="founder-name">Babatunde Victoria Inioluwa</div>
+        <div class="founder-sub">Founder</div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-aurora" aria-hidden="true"></div>
+      <div class="hero-photo-frame">
+        <div class="hero-photo-frame-inner">
+          <img src="assets/images/founder-photo-new.png" alt="Babatunde Victoria Inioluwa">
+        </div>
+      </div>
+      <span class="sparkle sparkle-1" aria-hidden="true"></span>
+      <span class="sparkle sparkle-2" aria-hidden="true"></span>
+      <span class="sparkle sparkle-3" aria-hidden="true"></span>
+      <span class="sparkle sparkle-4" aria-hidden="true"></span>
+      <span class="sparkle sparkle-5" aria-hidden="true"></span>
+      <span class="spark-particle spark-1" aria-hidden="true"></span>
+      <span class="spark-particle spark-2" aria-hidden="true"></span>
+      <span class="spark-particle spark-3" aria-hidden="true"></span>
+      <span class="spark-particle spark-4" aria-hidden="true"></span>
+      <span class="spark-particle spark-5" aria-hidden="true"></span>
+      <span class="spark-particle spark-6" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="values-grid">
+    <div class="value-card reveal-up glow-border glow-border-hover">
+      <div class="value-title">Hands-on</div>
+      <div class="value-desc">I manage channels day to day, not just strategy decks.</div>
+    </div>
+    <div class="value-card reveal-up glow-border glow-border-hover">
+      <div class="value-title">Data-informed</div>
+      <div class="value-desc">My decisions are grounded in analytics, not guesswork.</div>
+    </div>
+    <div class="value-card reveal-up glow-border glow-border-hover">
+      <div class="value-title">Creator-first</div>
+      <div class="value-desc">Your voice and vision stay in the driver's seat.</div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-copy">© 2026 Babatunde Victoria Inioluwa</div>
+  <nav class="footer-links">
+    <a href="index.html" class="footer-link">Home</a>
+    <a href="about.html" class="footer-link active">About</a>
+    <a href="services.html" class="footer-link">Services</a>
+    <a href="portfolio.html" class="footer-link">Portfolio</a>
+    <a href="faq.html" class="footer-link">FAQ</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+    <div class="nav-dropdown-wrap footer-dropdown-wrap">
+      <button type="button" class="footer-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+        Connect
+        <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="nav-dropdown footer-nav-dropdown" data-dropdown-panel>
+        <a href="https://www.linkedin.com/in/babatunde-victoria-a283833b3/" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5v10"/><circle cx="6.5" cy="5.2" r="1.1" fill="currentColor" stroke="none"/><path d="M11 18.5v-6.2a2.3 2.3 0 0 1 4.6 0v6.2"/><path d="M11 18.5v-6.2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://www.fiverr.com/users/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          Fiverr
+        </a>
+        <button type="button" class="nav-dropdown-link footer-social-dropdown-link" data-discord-copy="victoria048713">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8.2c3.2-1.1 6.8-1.1 10 0"/><path d="M6.2 9.3c-1.4 3-1.6 5.9-.9 8.3 1.5.8 2.9 1.3 4.2 1.5l.8-1.5"/><path d="M17.8 9.3c1.4 3 1.6 5.9.9 8.3-1.5.8-2.9 1.3-4.2 1.5l-.8-1.5"/><circle cx="9" cy="13.2" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.2" r=".9" fill="currentColor" stroke="none"/></svg>
+          <span data-discord-label>victoria048713</span>
+        </button>
+        <a href="mailto:babatundevictoria300@gmail.com" class="nav-dropdown-link footer-social-dropdown-link">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          Gmail
+        </a>
+      </div>
+    </div>
+  </nav>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

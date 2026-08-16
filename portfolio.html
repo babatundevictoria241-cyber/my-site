@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (!t) {
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+    }
+    if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  } catch (e) {}
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Babatunde Victoria Inioluwa</title>
+<meta name="description" content="Case studies and results from creators and artists we've worked with.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="index.html" class="brand">Babatunde <span>Victoria</span> Inioluwa</a>
+  <div class="nav-right">
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <div class="nav-dropdown-wrap">
+        <button type="button" class="nav-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Services
+          <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" data-dropdown-panel>
+        <a href="services.html#svc-channel-management" class="nav-dropdown-link">YouTube Channel Management</a>
+        <a href="services.html#svc-video-editing" class="nav-dropdown-link">YouTube Video Editing</a>
+        <a href="services.html#svc-seo-growth" class="nav-dropdown-link">YouTube SEO &amp; Growth</a>
+        <a href="services.html#svc-monetization" class="nav-dropdown-link">YouTube Monetization</a>
+        <a href="services.html#svc-youtube-promotion" class="nav-dropdown-link">YouTube Promotion</a>
+        <a href="services.html#svc-twitch-promotion" class="nav-dropdown-link">Twitch Promotion</a>
+        <a href="services.html#svc-music-promotion" class="nav-dropdown-link">Music Promotion</a>
+        <a href="services.html#svc-songwriting" class="nav-dropdown-link">Songwriting</a>
+        <a href="services.html#svc-press-release" class="nav-dropdown-link">Press Release</a>
+          <a href="services.html" class="nav-dropdown-link nav-dropdown-all">See all services &rarr;</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="nav-dropdown-wrap header-connect-wrap">
+        <button type="button" class="nav-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Connect
+          <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="nav-dropdown" data-dropdown-panel>
+          <a href="https://www.linkedin.com/in/babatunde-victoria-a283833b3/" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5v10"/><circle cx="6.5" cy="5.2" r="1.1" fill="currentColor" stroke="none"/><path d="M11 18.5v-6.2a2.3 2.3 0 0 1 4.6 0v6.2"/><path d="M11 18.5v-6.2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://www.fiverr.com/users/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            Fiverr
+          </a>
+          <button type="button" class="nav-dropdown-link footer-social-dropdown-link" data-discord-copy="victoria048713">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8.2c3.2-1.1 6.8-1.1 10 0"/><path d="M6.2 9.3c-1.4 3-1.6 5.9-.9 8.3 1.5.8 2.9 1.3 4.2 1.5l.8-1.5"/><path d="M17.8 9.3c1.4 3 1.6 5.9.9 8.3-1.5.8-2.9 1.3-4.2 1.5l-.8-1.5"/><circle cx="9" cy="13.2" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.2" r=".9" fill="currentColor" stroke="none"/></svg>
+            <span data-discord-label>victoria048713</span>
+          </button>
+          <a href="mailto:babatundevictoria300@gmail.com" class="nav-dropdown-link footer-social-dropdown-link">
+            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            Gmail
+          </a>
+        </div>
+      </div>
+    </nav>
+    <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta glow-border">Book a Free Strategy Call</a>
+  </div>
+  <button type="button" class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+</header>
+
+<main class="container page-head portfolio-head">
+  <div class="eyebrow eyebrow-center">PORTFOLIO</div>
+  <h1 class="page-title page-title-center">Case studies &amp; results.</h1>
+  <p class="page-lede">A few of the creators and artists we've worked with. Full details available on request.</p>
+
+  <div class="case-grid">
+    <div class="case-card reveal-flip" id="case-channel-management" tabindex="0" role="button" aria-label="Case Study — Gaming Channel. Click to flip for more detail.">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="case-image">
+            <img class="case-image-bg" src="assets/images/portfolio/portfolio-google-ads.jpg" alt="" aria-hidden="true">
+            <img class="case-image-fg" src="assets/images/portfolio/portfolio-google-ads.jpg" alt="Google Ads campaign overview showing growth metrics">
+            <button type="button" class="case-expand-btn" data-lightbox-trigger aria-label="View full image">⤢</button>
+          </div>
+          <div class="case-body">
+            <div class="case-title">Case Study — Gaming Channel</div>
+            <div class="case-desc">Ongoing channel management and video editing, focused on upload consistency and SEO.</div>
+            <div class="case-metric">4.58M impressions · 42.4K clicks</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="case-back-title">Gaming Channel</div>
+          <div class="case-back-desc">Full channel management and video editing kept uploads consistent and SEO-optimized, driving a sustained lift in paid and organic reach.</div>
+          <div class="case-back-metric">4.58M impressions · 42.4K clicks · $27.7K spend</div>
+          <a href="contact.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal-flip" id="case-twitch" tabindex="0" role="button" aria-label="Case Study — Twitch Streamer. Click to flip for more detail.">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="case-image">
+            <img class="case-image-bg" src="assets/images/portfolio/portfolio-twitch-partner.jpg" alt="" aria-hidden="true">
+            <img class="case-image-fg" src="assets/images/portfolio/portfolio-twitch-partner.jpg" alt="Twitch Partner Program acceptance notification">
+            <button type="button" class="case-expand-btn" data-lightbox-trigger aria-label="View full image">⤢</button>
+          </div>
+          <div class="case-body">
+            <div class="case-title">Case Study — Twitch Streamer</div>
+            <div class="case-desc">Promotion and community growth strategy for a variety streamer.</div>
+            <div class="case-metric">Accepted into the Twitch Partner Program</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="case-back-title">Twitch Streamer</div>
+          <div class="case-back-desc">Consistent stream promotion and community-building strategy helped the channel hit Twitch's Partner requirements.</div>
+          <div class="case-back-metric">Accepted into the Twitch Partner Program</div>
+          <a href="contact.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal-flip" id="case-artist" tabindex="0" role="button" aria-label="Case Study — Independent Artist. Click to flip for more detail.">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="case-image">
+            <img class="case-image-bg" src="assets/images/portfolio/portfolio-spotify-playlists.jpg" alt="" aria-hidden="true">
+            <img class="case-image-fg" src="assets/images/portfolio/portfolio-spotify-playlists.jpg" alt="Spotify playlist reach dashboard">
+            <button type="button" class="case-expand-btn" data-lightbox-trigger aria-label="View full image">⤢</button>
+          </div>
+          <div class="case-body">
+            <div class="case-title">Case Study — Independent Artist</div>
+            <div class="case-desc">Music promotion and press release campaign around a single release.</div>
+            <div class="case-metric">73.9K playlist reach across 37 playlists</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="case-back-title">Independent Artist</div>
+          <div class="case-back-desc">Playlist pitching and press outreach around a single release grew placements from a handful of contacts to dozens of curated playlists.</div>
+          <div class="case-back-metric">73.9K playlist reach across 37 playlists</div>
+          <a href="contact.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal-flip" id="case-monetization" tabindex="0" role="button" aria-label="Case Study — Monetization Setup. Click to flip for more detail.">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="case-image">
+            <img class="case-image-bg" src="assets/images/portfolio/portfolio-youtube-revenue.jpg" alt="" aria-hidden="true">
+            <img class="case-image-fg" src="assets/images/portfolio/portfolio-youtube-revenue.jpg" alt="YouTube Studio revenue dashboard">
+            <button type="button" class="case-expand-btn" data-lightbox-trigger aria-label="View full image">⤢</button>
+          </div>
+          <div class="case-body">
+            <div class="case-title">Case Study — Monetization Setup</div>
+            <div class="case-desc">Guided a growing channel through monetization requirements and setup.</div>
+            <div class="case-metric">US$109K estimated revenue</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="case-back-title">Monetization Setup</div>
+          <div class="case-back-desc">Guidance through eligibility requirements and revenue-stream setup (ads, Shorts, memberships) took the channel from unmonetized to a strong, steady payout.</div>
+          <div class="case-back-metric">US$109K estimated revenue</div>
+          <a href="contact.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="case-card reveal-flip" id="case-testimonial" tabindex="0" role="button" aria-label="Client testimonial from Jess and Nyzayah. Click to flip for more detail.">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="case-image">
+            <img class="case-image-bg" src="assets/images/portfolio/portfolio-discord-testimonial.png" alt="" aria-hidden="true">
+            <img class="case-image-fg" src="assets/images/portfolio/portfolio-discord-testimonial.png" alt="Discord conversation with client Jess and Nyzayah praising the work">
+            <button type="button" class="case-expand-btn" data-lightbox-trigger aria-label="View full image">⤢</button>
+          </div>
+          <div class="case-body">
+            <div class="case-title">Client Testimonial</div>
+            <div class="case-desc">"You doing an amazing job." — Jess &amp; Nyzayah</div>
+            <div class="case-metric">Direct client feedback, via Discord</div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="case-back-title">Jess &amp; Nyzayah</div>
+          <div class="case-back-desc">"I will keep you updated on how it goes, but you can keep working on making more content." — "Thank you." — "You doing an amazing job."</div>
+          <div class="case-back-metric">Ongoing client relationship</div>
+          <a href="contact.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" data-lightbox-overlay hidden>
+  <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close">&times;</button>
+  <img src="" alt="" data-lightbox-img>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-copy">© 2026 Babatunde Victoria Inioluwa</div>
+  <nav class="footer-links">
+    <a href="index.html" class="footer-link">Home</a>
+    <a href="about.html" class="footer-link">About</a>
+    <a href="services.html" class="footer-link">Services</a>
+    <a href="portfolio.html" class="footer-link active">Portfolio</a>
+    <a href="faq.html" class="footer-link">FAQ</a>
+    <a href="contact.html" class="footer-link">Contact</a>
+    <div class="nav-dropdown-wrap footer-dropdown-wrap">
+      <button type="button" class="footer-link nav-dropdown-trigger" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+        Connect
+        <svg class="nav-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="nav-dropdown footer-nav-dropdown" data-dropdown-panel>
+        <a href="https://www.linkedin.com/in/babatunde-victoria-a283833b3/" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5v10"/><circle cx="6.5" cy="5.2" r="1.1" fill="currentColor" stroke="none"/><path d="M11 18.5v-6.2a2.3 2.3 0 0 1 4.6 0v6.2"/><path d="M11 18.5v-6.2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://www.fiverr.com/users/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          Fiverr
+        </a>
+        <button type="button" class="nav-dropdown-link footer-social-dropdown-link" data-discord-copy="victoria048713">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 8.2c3.2-1.1 6.8-1.1 10 0"/><path d="M6.2 9.3c-1.4 3-1.6 5.9-.9 8.3 1.5.8 2.9 1.3 4.2 1.5l.8-1.5"/><path d="M17.8 9.3c1.4 3 1.6 5.9.9 8.3-1.5.8-2.9 1.3-4.2 1.5l-.8-1.5"/><circle cx="9" cy="13.2" r=".9" fill="currentColor" stroke="none"/><circle cx="15" cy="13.2" r=".9" fill="currentColor" stroke="none"/></svg>
+          <span data-discord-label>victoria048713</span>
+        </button>
+        <a href="mailto:babatundevictoria300@gmail.com" class="nav-dropdown-link footer-social-dropdown-link">
+          <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          Gmail
+        </a>
+      </div>
+    </div>
+  </nav>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
