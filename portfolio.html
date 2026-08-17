@@ -7,7 +7,7 @@
   try {
     var t = localStorage.getItem('theme');
     if (!t) {
-      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light': 'dark';
     }
     if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
   } catch (e) {}
@@ -59,7 +59,7 @@
             <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 8.5v10"/><circle cx="6.5" cy="5.2" r="1.1" fill="currentColor" stroke="none"/><path d="M11 18.5v-6.2a2.3 2.3 0 0 1 4.6 0v6.2"/><path d="M11 18.5v-6.2"/></svg>
             LinkedIn
           </a>
-          <a href="https://www.fiverr.com/users/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.fiverr.com/inioluwa_100" class="nav-dropdown-link footer-social-dropdown-link" target="_blank" rel="noopener noreferrer">
             <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M8 9V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
             Fiverr
           </a>
