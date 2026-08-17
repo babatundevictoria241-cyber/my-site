@@ -6,7 +6,7 @@
  * --on-accent stay fixed across both themes so the brand color and its
  * text always keep the same relationship.
  */
-:root {
+: root {
   --bg: #0D0D12;
   --bg-raised: oklch(0.11 0.01 260);
   --bg-card: oklch(0.14 0.01 260);
@@ -1405,7 +1405,12 @@ textarea.field { resize: vertical; }
   .steps-grid { grid-template-columns: 1fr; gap: 28px; }
   .page-head { padding: 70px 16px 90px; }
   .hero { padding: 90px 16px 70px; }
+  .hero-photo {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
+
 
 @media (min-width: 761px) and (max-width: 980px) {
   .steps-grid { grid-template-columns: repeat(2, 1fr); }
