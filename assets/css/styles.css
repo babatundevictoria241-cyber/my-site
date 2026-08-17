@@ -6,7 +6,7 @@
  * --on-accent stay fixed across both themes so the brand color and its
  * text always keep the same relationship.
  */
-: root {
+:root {
   --bg: #0D0D12;
   --bg-raised: oklch(0.11 0.01 260);
   --bg-card: oklch(0.14 0.01 260);
